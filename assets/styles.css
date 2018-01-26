@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #ccc;
+  width: 100%;
+  height: 0px;
+  min-height: 100%;
+  margin: 0;
+  resize: both;
+  position: relative;
+  padding: 0;
+}
+.app {
+  width: 1000px;
+  height: 1618px;
+  text-align: center;
+  background: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+
+/* React Components */
+
+
+
+    /*line-height: 120px;*/
+
+    /*
+    @include border-radius(50%);
+    text-decoration: none;
+    color: #fff;
+    @include transition(all 275ms cubic-bezier(0.53, -0.67, 0.73, 0.74));
+    
+    &:hover {
+        background-color: #cc3177;
+      @include transition-timing-function(cubic-bezier(0.37, 0.74, 0.15, 1.65));
+        
+        .pulse {
+          border: 1px solid #cc3177;
+          @include transform(scale(1.15));
+          @include transition-timing-function(cubic-bezier(0.37, 0.74, 0.15, 1.65));
+        }
+      }
+
+*/
+    /*animation-name: example2;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3; /* 0, #, infinite */
+    /* animation-direction: alternate; reverse */
+    /*animation-timing-function: ...; 
+      ease - specifies an animation with a slow start, then fast, then end slowly (this is default)
+      linear - specifies an animation with the same speed from start to end
+      ease-in - specifies an animation with a slow start
+      ease-out - specifies an animation with a slow end
+      ease-in-out - specifies an animation with a slow start and end
+      cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+    */
+
+
+.circle::border {
+  animation-name: pulse;
+  animation-duration: 4s;
+  animation-delay: 2s;
+
+  animation: pulse 1s linear infinite;
+}
+
+/*
+div {
+    animation: example 5s linear 2s infinite alternate;
+}
+*/
+
+
+/* The animation code
+@keyframes pulse {
+  0% { transform: scale(1, 1); }
+  100% { transform: scale(1.1, 1.1); }
+
+
+ The element to apply the animation to */
+
+
+ /* starting state of animation */
+.slide-enter{
+  right: 100px;
+}
+
+ /* end of state animation */
+.slide-enter-active{
+  right: 0px;
+  transition: .5s ease-in all;
+}
+
+.slide-appear {
+  opacity: 0.1;
+  top: 400px;
+  bottom: 400px;
+  background-color: green;
+}
+
+/*
+.example-enter {
+  opacity: 0.01;
+  top: 400px;
+  bottom: 400px;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: all 1000ms ease-in;
+}
+
+.example-exit {
+  opacity: 1;
+}
+
+.example-exit.example-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+
+.example-appear {
+  opacity: 0.1;
+  top: 400px;
+  bottom: 400px;
+  background-color: green;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: all 5s ease-in;
+}
+
+*/
